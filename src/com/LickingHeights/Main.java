@@ -11,6 +11,7 @@ public class Main {
     public static void ModulusClock(){
         int hours;
         int minutes;
+
         Scanner user;
         user = new Scanner(System.in);
 
@@ -19,6 +20,10 @@ public class Main {
 
         System.out.println("Enter a Value for Minutes");
         minutes = user.nextInt();
+        hours = minutes >= 60? hours + minutes/60 : hours;
+        System.out.printf("The time is: %d:%02d",hours,minutes);
+
+
     }
 
 }
