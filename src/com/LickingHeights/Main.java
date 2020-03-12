@@ -21,8 +21,8 @@ public class Main {
         System.out.println("Enter a Value for Minutes");
         minutes = user.nextInt();
         hours = minutes >= 60? hours + minutes/60 : hours;
-        hours = ((hours%12));
-        
+        hours = (hours%12);
+        minutes =(minutes%60);
 
 
 
