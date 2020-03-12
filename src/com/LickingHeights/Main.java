@@ -23,9 +23,6 @@ public class Main {
         hours = minutes >= 60? hours + minutes/60 : hours;
         hours = (hours%12);
         minutes =(minutes%60);
-
-
-
         System.out.printf("The time is: %d:%02d",hours,minutes);
 
 
